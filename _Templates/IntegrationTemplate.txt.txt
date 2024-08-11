@@ -1,5 +1,7 @@
 /* 
- * This assumes you already have LVGL working with Arduino/ESP32
+ * 
+Integrate EEZ Studio GUI
+This assumes you already have LVGL working with Arduino/ESP32
 	- Arduino 	
 		- C:\Users\kolap\Documents\Arduino
 	- EEZ Studio 
