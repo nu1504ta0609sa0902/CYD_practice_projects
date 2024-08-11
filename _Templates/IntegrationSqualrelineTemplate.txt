@@ -1,5 +1,8 @@
 /* 
- * This assumes you already have LVGL working with Arduino/ESP32
+ * 
+Integrate SquareLine GUI
+
+This assumes you already have LVGL working with Arduino/ESP32
 	- Arduino 	
 		- C:\Users\kolap\Documents\Arduino
 	- EEZ Studio 
