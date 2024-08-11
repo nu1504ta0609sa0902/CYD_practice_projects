@@ -1,0 +1,94 @@
+EEZ_basic_speedometer_with_hovering_pointer
+
+-----------------------------------------
+Title
+-----------------------------------------
+Title begin with: LVGL ESP32 Beginners tutorial on 
+
+LVGL ESP32 tutorial create speedometer with hovering pointer Arc, Scale, Image Label (Beginner)
+
+-----------------------------------------
+Description headings
+-----------------------------------------
+
+
+Description begin with: LVGL ESP32-2432S028R CYD Beginners tutorial on
+
+LVGL ESP32-2432S028R CYD Beginners tutorial on create speedometer with hovering pointer Arc, Scale, Image Label (Beginner)
+
+
+I use EEZ Studio because they support LVGL 9 and don't require login like Squareline.
+I am learning about LVGL and ESP32 and documenting what I learn so it may help others.
+Note: these tutorials can be done on any displays supporting LVGL.
+
+-----------------------------------------
+Chapters headings
+-----------------------------------------
+
+00:00 - What are we creating?
+00:21 - Create new project?
+01:20 - Add a Scale and set the properties?
+02:53 - Basic explanation of Scale parts and set styles?
+06:32 - Add a Arc and set the properties?
+07:50 - Basic explanation of Arc parts and set styles?
+11:50 - Add image to ARC (optional)?
+13:13 - Add image to show the Needle?
+15:02 - Integrate with Arduino?
+16:00 - Change Arc/Scale code to make it look nicer?
+18:50 - Final Results?
+
+- Looks like I forgot the part where we add the speed label.
+	- That is optional, you can add it if you want.
+
+GitHub:
+https://github.com/nu1504ta0609sa0902/CYD_practice_projects/tree/main/LVGL9/EEZ_yt_simple_speedometer_with_pointer
+
+
+Assumes:
+	- you are familiar with ESP32-2432S028R AKA Cheap Yellow Display (CYD)
+		- https://randomnerdtutorials.com/lvgl-cheap-yellow-display-esp32-2432s028r/
+	- you've already setup all the required libraries for ESP32-2432S028R and LVGL
+		- https://randomnerdtutorials.com/lvgl-cheap-yellow-display-esp32-2432s028r/
+			- Great setup instructions
+		- https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display
+			- This has lots of examples for LVGL
+	- you've done basic tutorials for LVGL with CYD
+
+
+
+-----------------------------------------
+Keywords and other checks
+-----------------------------------------
+
+Keywords: 
+LVGL, Arduino, ESP32, CYD, Speedometer, Beginner, Tutorial, Example, ESP32, ESP32-2432S028R, CYD, Cheap Yellow Display
+
+- Also set date of publishing.
+- Add thumbnail
+- Add Chapter details
+
+
+
+---------------------------------
+Youtube Video Contents
+---------------------------------
+- Choose a topic
+- Explain topic Arc/Bar/Slider
+	- Parts Main/Indicator/Knob etc
+	- How to set range (if needed)
+	- How to set color
+		- BG, Indicator, Knob
+	- How to change the styling
+		- Opaque, Straight/Round corners
+	- How to add images to make it cool/better
+
+- Create example from scratch
+	- This might be long
+		- Add name for each GUI element
+	- Create C files for Arduino
+- Upload to CYD
+	- Add to Arduino
+	- Change/Add events 
+	- Show hot it will look like
+
+EEZ_basic_speedometer
