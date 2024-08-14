@@ -1,0 +1,160 @@
+---------------------------------
+Manually fire event
+---------------------------------
+
+/*Manually update the label for the first time*/
+lv_obj_send_event(arc, LV_EVENT_VALUE_CHANGED, NULL);
+lv_obj_send_event(objects.arc_shadow_bg, LV_EVENT_VALUE_CHANGED, NULL);
+
+---------------------------------
+Register an event
+---------------------------------
+
+    lv_obj_add_event_cb(btn, button_click_event_handler, LV_EVENT_CLICKED, NULL);
+    lv_obj_add_event_cb(btn, button_long_event_handler, LV_EVENT_LONG_PRESSED, NULL);
+    lv_obj_add_event_cb(btn, button_all_event_handler, LV_EVENT_ALL, NULL);
+	
+  lv_obj_add_event_cb(btn, event_cb, LV_EVENT_CLICKED, NULL);
+  lv_obj_add_event_cb(btn, event_cb, LV_EVENT_ALL, info_label);
+  lv_obj_add_event_cb(objects.arc_shadow_bg, value_changed_event_cb, LV_EVENT_VALUE_CHANGED, objects.label_milage_fg);
+  
+  
+
+
+---------------------------------
+Set Image rotation value
+---------------------------------
+
+lv_image_set_rotation(objects.img_needle, value * 10);
+
+---------------------------------
+Set Slider value
+---------------------------------
+  lv_slider_set_value(objects.slider_controller1, value, LV_ANIM_ON);
+  lv_slider_set_value(objects.speed_slider_fg, value, LV_ANIM_OFF);
+
+---------------------------------
+Set Label texts
+---------------------------------
+lv_label_set_text(label, "New text");
+lv_label_set_text_fmt(label, "Value: %d", 15);
+
+
+---------------------------------
+Set Scale Positions
+---------------------------------
+Main - That is the arc line 
+Item - Minor ticks
+Indicator - Major Ticks
+
+lv_scale_set_rotation(obj, 180);  	//Start scale From 3 O'clock + 180 degrees
+lv_scale_set_range(obj, 0, 270);	//So we have ticks for all our arc  
+
+//Update to position the scale
+lv_scale_set_rotation(obj, 180);     //Start scale From 3 O'clock + 180 degrees
+lv_scale_set_angle_range(obj, 270);  //Scale angle range from set rotation start angle
+lv_scale_set_range(obj, 0, 150);     //Scale value range, what is displayed
+
+lv_scale_set_total_tick_count(obj, 31);	//31 where 1 is for 0 (first major tick)
+lv_scale_set_major_tick_every(obj, 3);	//150/30 = 50 ticks and 1 for 0 (whatever the start value is)
+
+//Update to position the scale
+lv_scale_set_rotation(obj, 180);  	//Start scale From 3 O'clock + 180 degrees
+lv_scale_set_range(obj, 0, 180);     	//Scale value range, what is displayed
+lv_scale_set_angle_range(obj, 180);  	//Scale angle range shown in the GUI
+lv_scale_set_total_tick_count(obj, 61); //total number of ticks minor and major
+lv_scale_set_major_tick_every(obj, 3);	//Show major one every X
+
+---------------------------------
+Set ARC start and end angle
+---------------------------------
+Main - Arc Background
+Indicator - Arc indicator
+Knob - knob that shows the position of the arc
+
+//Update to position the Arc
+lv_arc_set_range(obj, 0, 180);    //Arc value will go from 0 to 180
+lv_arc_set_bg_angles(obj, 180, 0);//Arc will start at 180 deg and go to 0 (or use start and end angles)
+
+//Update to position the Arc
+lv_arc_set_range(obj, 0, 270);       //Arc value will go from 0 to 180
+lv_arc_set_bg_angles(obj, 135, 45);  //Arc will start at 135 deg and go to 0+45 (or use start and end angles)
+
+- set the arc and background arc ranges
+1. 
+lv_arc_set_range(obj, 0, 180);		//Indicator arc range from 0 to 180
+lv_arc_set_bg_angles(obj, 180, 0);	//Main arc to start from 180 and go to 0
+
+2. 
+lv_arc_set_range(obj, 0, 180);
+lv_arc_set_bg_start_angle(obj, 180);
+lv_arc_set_bg_end_angle(obj, 0);
+
+3.
+lv_arc_set_range(obj, 0, 240);        //Value range for the arc
+lv_arc_set_bg_angles(obj, 180, 90);   //Main arc to start from 180 and go to 270 (+180->3'Oclock + 90)
+
+Either one should work.
+---------------------------------
+Example events
+---------------------------------
+static void event_handler_main_page(lv_event_t *e) {
+  lv_event_code_t code = lv_event_get_code(e);
+
+  if (code == LV_EVENT_CLICKED) {
+    LV_LOG_USER("Clicked");
+    loadScreen(SCREEN_ID_MAIN);
+  }
+}
+
+
+lv_obj_add_event_cb(obj, event_handler_main_page, LV_EVENT_ALL, NULL);
+
+  //Add button event handlers
+  lv_obj_add_event_cb(objects.btn_reset_value, btn_reset_value_handler, LV_EVENT_ALL, NULL);
+  lv_obj_add_event_cb(objects.btn_random_value, btn_random_value_handler, LV_EVENT_ALL, NULL);
+
+---------------------------------
+Example Swipes and Gestures
+---------------------------------
+
+int currentScreen = 1;  //Main Screen=1 keep track of which screen we are in.
+int totalNumberOfScreens = 5; //MUST change to number of screens
+
+void my_event(lv_event_t *e) {
+  lv_obj_t *screen = lv_event_get_current_target(e);
+  lv_dir_t dir = lv_indev_get_gesture_dir(lv_indev_active());
+
+  //Log which way we are swiping
+  printf("Dir: %d\n", dir);
+  switch (dir) {
+    case LV_DIR_LEFT:
+      //Go towards the last screen
+      if (currentScreen < totalNumberOfScreens) {
+        loadScreen(currentScreen + 1);
+        currentScreen = currentScreen + 1;
+      }
+      break;
+    case LV_DIR_RIGHT:
+      //Go towards teh Main/First screen
+      if (currentScreen > 1) {
+        loadScreen(currentScreen - 1);
+        currentScreen = currentScreen - 1;
+      }
+      break;
+      
+  }
+}
+
+  lv_obj_add_event_cb(obj, my_event, LV_EVENT_GESTURE, NULL);
+
+---------------------------------
+Sliding Image using Slider
+---------------------------------
+
+LVGL 8.3+ Works great
+
+LVGL 9.0+ You need to set:
+	- Background style Image Tiled
+		- Enable the switch
+	- But runs out of memory on CYD
