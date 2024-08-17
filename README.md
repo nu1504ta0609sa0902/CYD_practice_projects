@@ -6,9 +6,15 @@ Keep all my CYD ESP32-2432S028R projects in one place.
 Document what I learn about LVGL + ESP32 CYD.
 
 
-# YouTube Tutorial links
-* Test
-* 
+# LVGL YouTube Tutorial using EEZ Studio
+  
+* https://youtu.be/TGUtOXiPaHE - Speedometer using Slider, Scale and Images
+* https://youtu.be/MJV5cYd6pyM - Buttons to navigate between pages
+* https://youtu.be/uYh4BMK9QQ4 - Use Slider and Image to create cool effects
+* https://youtu.be/vY1Szy-C_4Q - Use swipes to navigate between pages
+* https://youtu.be/gby-spFOx_c - Tempearature bar example
+* https://youtu.be/snj5-Wnf7Qc - Simple game using Sliders
+* https://youtu.be/1fXV2woCHqA
 
 # CYD setup details available at RandomNerdTutorials
 ESP32-2432S028R Cheap Yellow Display LVGL example with EEZ Studio.
@@ -22,3 +28,5 @@ Assumes:
 		- https://randomnerdtutorials.com/lvgl-cheap-yellow-display-esp32-2432s028r/
 
 	- you've done basic tutorials for LVGL with CYD
+
+ 	- Download EEZ Studio https://www.envox.eu/studio/studio-introduction/
