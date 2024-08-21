@@ -15,6 +15,9 @@ Document what I learn about LVGL + ESP32 CYD.
 * https://youtu.be/gby-spFOx_c - Tempearature bar example
 * https://youtu.be/snj5-Wnf7Qc - Simple game using Sliders
 * https://youtu.be/1fXV2woCHqA
+  
+* https://youtu.be/_AAg4TQdDpI - Button event handling
+* https://youtu.be/NpXwH3h2Ixs - ARC event handling
 
 # CYD setup details available at RandomNerdTutorials
 ESP32-2432S028R Cheap Yellow Display LVGL example with EEZ Studio.
