@@ -17,7 +17,8 @@ Document what I learn about LVGL + ESP32 CYD.
 * https://youtu.be/1fXV2woCHqA
   
 * https://youtu.be/_AAg4TQdDpI - Button event handling
-* https://youtu.be/NpXwH3h2Ixs - ARC event handling
+* https://youtu.be/NpXwH3h2Ixs - ARC event handling 
+* https://youtu.be/ehFF0kKupg8 - Switch event handling
 
 # CYD setup details available at RandomNerdTutorials
 ESP32-2432S028R Cheap Yellow Display LVGL example with EEZ Studio.
