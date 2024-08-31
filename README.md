@@ -9,6 +9,7 @@ Document what I learn about LVGL + ESP32 CYD.
 # LVGL YouTube Tutorial using EEZ Studio
   
 * https://youtu.be/TGUtOXiPaHE - Speedometer using Slider, Scale and Images
+* https://youtu.be/9ILaqyp_fQA - Circular Speedometer using Spinner, Scale, ARC, Image and Labels
 * https://youtu.be/MJV5cYd6pyM - Buttons to navigate between pages
 * https://youtu.be/uYh4BMK9QQ4 - Use Slider and Image to create cool effects
 * https://youtu.be/vY1Szy-C_4Q - Use swipes to navigate between pages
