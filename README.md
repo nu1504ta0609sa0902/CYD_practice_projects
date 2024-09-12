@@ -20,7 +20,6 @@ Document what I learn about LVGL + ESP32 CYD.
 * https://youtu.be/_AAg4TQdDpI - Button event handling
 * https://youtu.be/NpXwH3h2Ixs - ARC event handling 
 * https://youtu.be/ehFF0kKupg8 - Switch event handling
-<br/>
 * https://youtu.be/mk7B_LBags8 - Button LED on breadboard
 * https://youtu.be/34ps1c4kjw8 - Switch LED on breadboard
 
