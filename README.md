@@ -24,6 +24,8 @@ Document what I learn about LVGL + ESP32 CYD.
 * https://youtu.be/mk7B_LBags8 - Button LED on breadboard
 * https://youtu.be/34ps1c4kjw8 - Switch LED on breadboard
 
+* https://youtu.be/ynHcOtYNopg - Add Custom Fonts and use it. 
+
 # CYD setup details available at RandomNerdTutorials
 ESP32-2432S028R Cheap Yellow Display LVGL example with EEZ Studio.
 
