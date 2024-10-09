@@ -27,7 +27,7 @@ Document what I learn about LVGL + ESP32 CYD.
 
 * https://youtu.be/ynHcOtYNopg - Add Custom Fonts and use it.
 * https://youtu.be/NRyf-t-fDvw - Add Bitmap Image and edit Fonts.
-* https://youtu.be/L5Z5vIkuMxM - Keyboard and Text Area
+* https://youtu.be/DzZw5u51wGw - Keyboard and Text Area
 
 # CYD setup details available at RandomNerdTutorials
 ESP32-2432S028R Cheap Yellow Display LVGL example with EEZ Studio.
