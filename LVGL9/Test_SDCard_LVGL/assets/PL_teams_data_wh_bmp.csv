@@ -1,0 +1,21 @@
+id,team,est,stadium,cupsWon,runnersUp,seasonsInPL,imagePath
+1,Arsenal,1886,Emirates Stadium,3,8,33,Arsenal.bmp
+2,Aston Villa,1874,Villa Park,0,0,30,AstonVilla.bmp
+3,Bournemouth,1899,Vitality Stadium,0,0,8,Bournemouth.bmp
+4,Brentford,1889,Gtech Community Stadium,0,0,4,Brentford.bmp
+5,Brighton & Hove Albion,1901,American Express Stadium,0,0,8,Brighton.bmp
+6,Chelsea,1905,Stamford Bridge,5,4,33,Chelsea.bmp
+7,Crystal Palace,1905,Selhurst Park,0,0,16,CrystalPalace.bmp
+8,Everton,1878,Goodison Park,0,0,33,Everton.bmp
+9,Fulham,1879,Craven Cottage,0,0,18,Fulham.bmp
+10,Ipswich Town,1878,Portman Road,0,0,6,IpswichTown.bmp
+11,Leicester City,1884,King Power Stadium,1,0,18,LeicesterCity.bmp
+12,Liverpool,1892,Anfield,1,5,33,Liverpool.bmp
+13,Manchester City,1887,Etihad Stadium,8,3,28,ManchesterCity.bmp
+14,Manchester United,1878,Old Trafford,13,7,33,ManchesterUnited.bmp
+15,Newcastle United,1892,St. James' Park,0,0,30,NewcastleUnited.bmp
+16,Nottingham Forest,1865,The City Ground,0,0,8,NottinghamForest.bmp
+17,Southampton,1885,St Mary's Stadium,0,0,25,Southampton.bmp
+18,Tottenham Hotspur,1882,Tottenham Hotspur Stadium,0,0,33,TottenhamHotspur.bmp
+19,West Ham United,1895,London Stadium,0,0,29,WestHamUnited.bmp
+20,Wolverhampton Wanderers,1877,Molineux Stadium,0,0,11,Wolves.bmp
