@@ -30,6 +30,7 @@ Document what I learn about LVGL + ESP32 CYD.
 * https://youtu.be/DzZw5u51wGw - Keyboard and Text Area
 * https://youtu.be/1fPoUCFtaY0 - Animation with Slider and Bar
 * https://youtu.be/fMVRCTi7kAM - Animation cartoon
+* https://youtu.be/QpoLW9APGmo - Read from SD Card 
 
 # CYD setup details available at RandomNerdTutorials
 ESP32-2432S028R Cheap Yellow Display LVGL example with EEZ Studio.
